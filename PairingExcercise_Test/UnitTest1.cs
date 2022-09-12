@@ -26,6 +26,5 @@ public class Tests
         //Assert.Pass();
         SortedStringArray.SortedStrings("how are you").Should().Be("are you how");
 
-
     }
 }

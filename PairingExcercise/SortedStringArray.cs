@@ -13,11 +13,17 @@ namespace PairingExcercise
         public SortedStringArray()
         { }
 
-        public string SortedStrings(string strArray)
-        { 
-
-            return strArray;
-        
+        public string SortedStrings(string inputStr)
+        {
+            inputStr = "how are you";
+            string[] words = inputStr.Split(' ');
+            Array.Sort(words);
+            /// to get last charcher of string
+            /// //
+            /// word[0][word.length-1];
+            string outputArr = String.Join(" ",words);
+            //Console.WriteLine(outputArr);
+            return outputArr;        
         }
     }
 }
